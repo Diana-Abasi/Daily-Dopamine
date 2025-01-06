@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dopamine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="app-title">Welcome to Daily Dopamine</h1>
+        </header>
+        <main class="grid-layout">
+            <div id="user-section" class="card">
+                <h2 id="greeting">Hello! What's your name?</h2>
+                <input type="text" id="name-input" placeholder="Enter your name">
+                <button id="save-name-btn" class="styled-button">Save</button>
+                <p class="placeholder">Discover personalized features after saving your name!</p>
+            </div>
+            <div id="goal-tracker-section" class="card">
+                <h2>Goal Tracker</h2>
+                <p class="placeholder">Set a goal to begin tracking your progress!</p>
+                <div class="progress-container">
+                    <div id="goal-tracker-progress">
+                        <svg>
+                            <circle cx="50" cy="50" r="40" class="bg-circle"></circle>
+                            <circle cx="50" cy="50" r="40" id="goal-progress-circle" class="progress-circle"></circle>
+                        </svg>
+                        <div id="goal-reset-container">
+                            <button id="reset-goal-btn" class="styled-button small-button">Reset Progress</button>
+                        </div>
+                    </div>
+                    <div id="milestone-info">
+                        <p>Milestones Achieved: <span id="milestone-count">0</span></p>
+                    </div>
+                </div>
+                <button id="set-goal-btn" class="styled-button">Set a Goal</button>
+                <div id="goal-options" class="hidden">
+                    <p>Choose your goal:</p>
+                    <select id="goal-select">
+                        <option value="">Select a goal...</option>
+                        <option value="focus">Improve Focus</option>
+                        <option value="positivity">Boost Positivity</option>
+                        <option value="relaxation">Achieve Relaxation</option>
+                        <option value="knowledge">Expand Knowledge</option>
+                    </select>
+                    <button id="confirm-goal-btn" class="styled-button">Confirm Goal</button>
+                </div>
+            </div>
+            <div id="habit-tracker-section" class="card">
+                <h2>Habit Tracker</h2>
+                <p>What habit would you like to form or break?</p>
+                <input type="text" id="habit-input" placeholder="Enter your habit">
+                <button id="log-habit-btn" class="styled-button">Log Habit</button>
+                <div id="habit-progress" class="hidden">
+                    <h3>Steps to Complete Your Habit:</h3>
+                    <ul id="habit-steps">
+                        <li><input type="checkbox" id="daily-step"> Daily Tracking: Log today’s progress.<br>
+                            <textarea id="daily-action" placeholder="Log your daily progress..." class="styled-textarea"></textarea>
+                        </li>
+                        <li><input type="checkbox" id="weekly-step"> Weekly Consistency: Maintain for 7 days.<br>
+                            <textarea id="weekly-action" placeholder="Reflect on your weekly efforts and list 3 strategies for improvement..." class="styled-textarea"></textarea>
+                        </li>
+                        <li><input type="checkbox" id="milestone-step"> Habit Mastery: Complete 21 days.<br>
+                            <textarea id="milestone-action" placeholder="Celebrate your success! What did you learn from this habit-forming journey?" class="styled-textarea"></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="activity-section" class="card">
+                <h2>What would you like to do now?</h2>
+                <p class="placeholder">Choose an activity to get started!</p>
+                <div class="button-group spaced-buttons">
+                    <button id="get-boost-btn" class="styled-button">Get a Motivation Boost</button>
+                    <button id="start-quiz-btn" class="styled-button">Take a Fun Quiz</button>
+                    <button id="daily-challenge-btn" class="styled-button">Complete a Quick Challenge</button>
+                    <button id="relax-mode-btn" class="styled-button">Enter Relaxation Mode</button>
+                </div>
+                <div id="activity-modal" class="hidden">
+                    <h3 id="activity-title"></h3>
+                    <p id="activity-content"></p>
+                    <button id="close-activity-btn" class="styled-button">Close</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Daily Dopamine</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
