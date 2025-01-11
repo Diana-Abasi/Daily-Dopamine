@@ -13,14 +13,14 @@ Backend: Firebase (planned for future updates)
 Deployment: Netlify
 How to Use 🚀
 Clone the repository:
-git clone https://github.com/yourusername/daily-dopamine.git
+git clone https(https://github.com/Diana-Abasi/Daily-Dopamine)
 Navigate to the project directory:
 cd daily-dopamine
 Install dependencies:
 npm install
 Start the development server:
 npm start
-Live Demo https://focusflowfree.netlify.app/
+Live Demo (https://dailydopamine.netlify.app/)
 Check out Daily Dopamine here!
 
 Contributing 🤝
